@@ -1,0 +1,98 @@
+body {
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow-x: hidden;
+}
+.main_parent
+{
+    overflow-x: hidden;
+}
+h2 {
+    color: #fff;
+    font-style: italic;
+    font-weight: 900;
+}
+
+i.fa-marker {
+    color: crimson;
+}
+
+label {
+    color: #fff;
+    font-weight: 800;
+}
+
+.form-control,
+.form-control:focus,
+.form-control:active,
+.form-control:hover {
+    border-radius: 0;
+    border-bottom-right-radius: 25px;
+    background-color: #203A43;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+    border-color: #FFF;
+    padding: 1.375rem 0.75rem;
+}
+
+textarea.form-control {
+    min-height: 125px;
+}
+
+.btn#add-book,
+.btn#edit-book {
+    background-color: #fff;
+    color: #203A43;
+    font-weight: bold;
+}
+
+.table {
+    border-radius: 5px;
+}
+
+.table-light tbody+tbody,
+.table-light td,
+.table-light th,
+.table-light thead th {
+    border-color: #203A43;
+    color: #203A43;
+    font-weight: 700;
+}
+
+.table-light td,
+.table-light th,
+.table-light thead th {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.head {
+    border-top: none !important;
+}
+.alert
+{
+    position: fixed;
+    right: 20px;
+    z-index: 9999;
+}
+@media(min-width:320px)and (max-width:767px)
+{
+    .header
+    {
+        flex-direction: column;
+        justify-content: flex-start !important;
+    }
+    .alert-parent 
+    {
+        margin-top: 10px !important;
+    }
+    .alert 
+    {
+        position: unset;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="webfonts/all.min.css">
+    <title>BookList</title>
+</head>
+
+<body>
+    <div class="main_parent">
+        <div class="container">
+            <div class="d-flex justify-content-between header">
+                <div class="d-flex ml-0 mt-5">
+                    <h2 class="main_head">BookList..</h2>
+                    <i class="fas fa-marker fa-2x"></i>
+                </div>
+                <div class="d-flex ml-0 mt-5 alert-parent">
+                    
+                </div>
+            </div>
+            <div class="mt-5 mb-5">
+                <form action="">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="email" name="" id="title" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="autor">Author</label>
+                                <input type="email" name="" id="author" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group">
+                                <label for="category">Category</label>
+                                <input type="email" name="" id="category" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="ISBN">ISBN</label>
+                                <input type="email" name="" id="ISBN" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-12 mt-5">
+                            <div class="text-center">
+                                <button class="btn" id="add-book">Add Book</button>
+                                <button class="btn edit" id="edit-book">edit Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <table class="table table-light">
+                <thead>
+                    <tr>
+                        <th scope="col" class="head">title</th>
+                        <th scope="col" class="head">category</th>
+                        <th scope="col" class="head">author</th>
+                        <th scope="col" class="head">#ISBN</th>
+                        <th scope="col" class="head">Delete</th>
+                        <th scope="col" class="head">Edit</th>
+                    </tr>
+                </thead>
+                <tbody id="book_list_body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
